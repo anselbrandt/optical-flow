@@ -88,7 +88,8 @@ export default function (props) {
 
         if (lastPixels.current && pixels) {
           const kernel = gpu
-            .createKernel(function (lastPixels, pixels, zones, quality, width) {
+            .createKernel(
+              `function (lastPixels, pixels, zones, quality, width) {
               const x = zones[this.thread.x][0];
               const y = zones[this.thread.x][1];
               let A2 = 0;
@@ -138,7 +139,8 @@ export default function (props) {
                 v = 10;
               }
               return [x, y, u, v];
-            })
+            }`
+            )
             .setOutput([zonesRef.current.length])
             .setTactic("balanced");
 
