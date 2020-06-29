@@ -225,7 +225,7 @@ export default function (props) {
         <video
           ref={videoRef}
           id="video"
-          src={process.env.PUBLIC_URL + "/test.mp4"}
+          src={"/test.mp4"}
           type="video/mp4"
           autoPlay
           loop
