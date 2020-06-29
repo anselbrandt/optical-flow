@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "../App.module.css";
 import { GPU } from "gpu.js/dist/gpu-browser.min";
 import getDirectionalColor from "./getDirectionalColor";
+import video from "./test.mp4";
 
 export default function (props) {
   const {
@@ -225,7 +226,7 @@ export default function (props) {
         <video
           ref={videoRef}
           id="video"
-          src={"/test.mp4"}
+          src={video}
           type="video/mp4"
           autoPlay
           loop
