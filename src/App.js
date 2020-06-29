@@ -6,7 +6,7 @@ import Legend from "./OpticalFlow/Legend";
 import Controls from "./Controls/Controls";
 
 function App() {
-  const [quality, setQuality] = useState(4);
+  const [quality, setQuality] = useState(10);
   const [maxFlow, setMaxFlow] = useState(100);
   const [minFlow, setMinFlow] = useState(0);
   const [transparency, setTransparency] = useState(1);
