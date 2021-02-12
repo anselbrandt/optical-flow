@@ -6,4 +6,4 @@ As GPUs are designed to process four 8 bit color values (RGBA), this can be expl
 
 The sample footage is from the [comma.ai speed challenge](https://github.com/commaai/speedchallenge).
 
-This is Part 1 of estimating vehicle speed from optical flow.
+This is Part 1 of estimating vehicle speed from optical flow, which is a lot more complicated than I originally thought, and probably not the best approach.
